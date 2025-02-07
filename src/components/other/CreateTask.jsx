@@ -23,7 +23,7 @@ const CreateTask = () => {
         data.forEach(function (elem) {
             if (asignTo == elem.firstName) {
                 elem.tasks.push(newTask)
-                elem.taskCounters.newTask = elem.taskCounters.newTask + 1
+                elem.taskCounts.newTask = elem.taskCounts.newTask + 1
             }
         })
         setUserData(data)
